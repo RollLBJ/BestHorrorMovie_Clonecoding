@@ -1,0 +1,19 @@
+$withoutSidebarMax: 910px;
+$smallWithSidebarMin: $withoutSidebarMax + 1;
+$smallWithSidebarMax: 1300px;
+$largeWithSidebarMin: $smallWithSidebarMax + 1;
+@mixin responsive($device){
+  @if $device =="withoutSidebar"{
+    @media screen and (max-width: $withoutSidebarMax){
+      @content;
+  }
+}@else if $device == "smallWithSidebar"{
+    @media screen and (min-width: $smallWithSidebarMin) and (max-width: $smallWithSidebarMax){
+      @content;
+    }
+} @else if $device =="largeWithSidebar"{
+    @media screen and (min-width: $largeWithSidebarMin){
+      @content;
+    }
+  }
+}

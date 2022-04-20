@@ -1,0 +1,299 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 910px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 89px 72px 72px 72px;
+  background-color: #F0F0F0;
+  color: #E7463C;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 910px) {
+  .header-container {
+    width: 100vw;
+    height: 100%;
+    position: inherit;
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 1300px) {
+  .header-container {
+    width: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  .header-container {
+    width: 33%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+.header-container .extra-content {
+  width: 90%;
+}
+
+.header-container h1 {
+  font-size: 65px;
+  margin-bottom: 88px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.header-container h4 {
+  font-size: 25px;
+  margin-bottom: 24px;
+  line-height: 28px;
+}
+
+.header-container h5 {
+  line-height: 22px;
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+
+.header-container span {
+  line-height: 22px;
+  display: block;
+  margin-bottom: 23px;
+}
+
+.header-container span a {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  padding-bottom: 2px;
+  border-bottom: solid rgba(0, 0, 0, 0.5) 1px;
+}
+
+.header-container span a:visited {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header-container span a:hover {
+  color: black;
+  border-color: black;
+}
+
+.header-container h6 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+  line-height: 13px;
+}
+
+main {
+  height: 1000vh;
+  background-color: #E7463C;
+}
+
+@media screen and (max-width: 910px) {
+  main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 1300px) {
+  main {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  main {
+    margin-left: 33%;
+  }
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .movie {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 72px;
+  width: 100%;
+  background: #e7463c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7463c), color-stop(63%, #df443a), color-stop(76%, #d03f36), color-stop(88%, #cf3f36), to(#b5372f));
+  background: linear-gradient(180deg, #e7463c 0%, #df443a 63%, #d03f36 76%, #cf3f36 88%, #b5372f 100%);
+}
+
+main .movie .movie_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 36px;
+  color: #F0F0F0;
+}
+
+main .movie .movie_header .movie_header-title {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+main .movie .movie_header .movie_header-director {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .movie .movie_rating {
+  text-align: end;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+main .movie .movie_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .movie .movie_footer .movie_footer-commentbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .movie .movie_footer .movie_footer-commentbtn div {
+  padding-bottom: 10px;
+  border-bottom: solid black 2px;
+}
+
+main .movie .movie_footer .movie_footer-commentbtn i {
+  margin-right: 8px;
+}
+
+main .movie_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .movie_img img {
+  width: 95%;
+}
+/*# sourceMappingURL=style.css.map */
